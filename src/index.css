@@ -1,3 +1,20 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+body {
+  margin: 0;
+  background: #0b0f16;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a {
+  color: #22d3ee;
+  text-decoration: none;
+}
