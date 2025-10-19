@@ -18,5 +18,16 @@ function withKey(params = {}) {
 
 export const endpoints = {
   popular: (page = 1) => `${API.base}/movie/popular?${withKey({ page })}`,
+  nowPlaying: (page = 1) => `${API.base}/movie/now_playing?${withKey({ page })}`,
+  upcoming: (page = 1) => `${API.base}/movie/upcoming?${withKey({ page })}`,
+  topRated: (page = 1) => `${API.base}/movie/top_rated?${withKey({ page })}`,
   movie: (id) => `${API.base}/movie/${id}?${withKey()}`,
 };
+
+// Optional: export a config for the picker UI
+export const CATEGORY_OPTIONS = [
+  { key: "popular", label: "Popular" },
+  { key: "nowPlaying", label: "Now Playing" },
+  { key: "upcoming", label: "Upcoming" },
+  { key: "topRated", label: "Top Rated" },
+];
