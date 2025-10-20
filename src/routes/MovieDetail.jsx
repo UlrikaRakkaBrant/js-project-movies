@@ -31,8 +31,13 @@ const Wrapper = styled.main`
 
   .poster {
     width: 100%;
+    height: auto;          /* ignore any HTML height attribute */
+    aspect-ratio: 2 / 3;   /* movie poster ratio */
+    object-fit: cover;     /* fill the box without distortion */
     border-radius: 0.75rem;
+    display: block;
   }
+
 
   .meta {
     color: var(--muted);
